@@ -1,24 +1,3 @@
-/* @keyframes animacao {
-    0% {
-        transform: translateX(-5px);
-    }
-    
-    50%{
-        transform: translateX(5px);
-    }
-
-    100%{
-        transform:  translateX(-5px);
-    }
-}
-
-#bloco1, #bloco2, #bloco3 {
-    animation: animacao  30s infinite;
-}
-
-
- */
-
 @keyframes animacao {
     0% {
         transform: translateX(-15px);
@@ -55,12 +34,11 @@ h2 {
     margin-left: 475px;
 }
 
-
 body {
     background: linear-gradient(to bottom, rgb(173, 4, 4), #b90303cc);
     margin: 0;
+    width: 100%;
     height: 350vh;
-    border-radius: 50px;
 }
 
 #barra {
@@ -112,7 +90,7 @@ body {
     border: none;
     border-radius: 10px;
     margin-top: 400px;
-    margin-left: 75px;
+    margin-left: 110px;
     width: 400px;
     height: 300px;
     box-shadow: 5px 5px 10px  #00000010, -10px -10px 15px #00000010;
@@ -146,7 +124,7 @@ body {
     border: none;
     border-radius: 10px;
     margin-top: 400px;
-    margin-left: 700px;
+    margin-left: 800px;
     width: 400px;
     height: 300px;
     box-shadow: 5px 5px 10px  #00000010, -10px -10px 15px #00000010;
@@ -180,7 +158,7 @@ body {
     border: none;
     border-radius: 10px;
     margin-top: 400px;
-    margin-left: 1400px;
+    margin-left: 1500px;
     width: 400px;
     height: 300px;
     box-shadow: 5px 5px 10px  #00000010, -10px -10px 15px #00000010;
