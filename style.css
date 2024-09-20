@@ -1,3 +1,23 @@
+/* @keyframes animacao {
+    0% {
+        transform: translateX(-5px);
+    }
+    
+    50%{
+        transform: translateX(5px);
+    }
+
+    100%{
+        transform:  translateX(-5px);
+    }
+}
+
+#bloco1, #bloco2, #bloco3 {
+    animation: animacao  30s infinite;
+}
+
+
+ */
 
 @keyframes animacao {
     0% {
@@ -9,26 +29,37 @@
     }
 }
 
-h1 {
+.N:hover, .B:hover, .C:hover, .D:hover {
+    animation: animacao 10s infinite;
+}
+
+
+h1, h2 {
     position: absolute;
     color: white;
-    font-size: 40px;
+    font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 200px;
     margin-left: 200px;
 
 }
 
+h1 {
+    margin-top: 200px;
+    margin-left: 200px;
 
-
-.N:hover, .B:hover, .C:hover, .D:hover {
-    animation: animacao 10s infinite;
 }
+
+h2 {
+    margin-top: 1700px;
+    margin-left: 475px;
+}
+
 
 body {
     background: linear-gradient(to bottom, rgb(173, 4, 4), #b90303cc);
     margin: 0;
-    height: 200vh;
+    height: 350vh;
     border-radius: 50px;
 }
 
@@ -42,7 +73,7 @@ body {
 #button {
     display: flex;    
     border: none;  
-    margin-top: 700px;
+    margin-top: 900px;
     margin-left:200px;
     flex-wrap: wrap;
     gap: 100px;
@@ -66,11 +97,111 @@ body {
 }
 
 .N img, .B img, .C img, .D img {
-    opacity: 0.5;
+    /* opacity: 0.5; */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
+}
+
+#bloco1 {
+    position: absolute;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 10px;
+    margin-top: 400px;
+    margin-left: 75px;
+    width: 400px;
+    height: 300px;
+    box-shadow: 5px 5px 10px  #00000010, -10px -10px 15px #00000010;
+
+}
+
+
+.B1{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 70px;
+    text-align: center;
+
+}
+
+
+.B2 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    text-align: center;
+
+    
+}
+
+
+
+#bloco2 {
+    position: absolute;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 10px;
+    margin-top: 400px;
+    margin-left: 700px;
+    width: 400px;
+    height: 300px;
+    box-shadow: 5px 5px 10px  #00000010, -10px -10px 15px #00000010;
+
+}
+
+
+
+.B3{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 70px;
+    text-align: center;
+
+}
+
+
+.B4 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    text-align: center;
+
+    
+}
+
+
+#bloco3 {
+    position: absolute;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 10px;
+    margin-top: 400px;
+    margin-left: 1400px;
+    width: 400px;
+    height: 300px;
+    box-shadow: 5px 5px 10px  #00000010, -10px -10px 15px #00000010;
+
+}
+
+
+.B5{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 70px;
+    text-align: center;
+
+}
+
+
+.B6 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    text-align: center;
+
+    
 }
