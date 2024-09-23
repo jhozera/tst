@@ -13,7 +13,7 @@
 }
 
 
-h1, h2 {
+h1, h2, h3 {
     position: absolute;
     color: white;
     font-size: 50px;
@@ -29,29 +29,39 @@ h1 {
 
 }
 
+
+
 h2 {
-    margin-top: 1700px;
-    margin-left: 475px;
+    background: linear-gradient(to right, red, rgb(202, 5, 5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 800px;
+    margin-left: 275px;
 }
 
 body {
     background: linear-gradient(to bottom, rgb(173, 4, 4), #b90303cc);
+    height: 450vh; /* Para permitir rolagem */
+    width: 90%;
     margin: 0;
-    width: 100%;
-    height: 350vh;
+    
 }
 
 #barra {
+    position: fixed;
     background: linear-gradient(to left, rgb(248, 248, 248), #ffffff);
     border-radius: 5px;
+    top: 0;
     padding: 10px;
+    width: 100%;
     height: 60px;
+    z-index: 1000;
 }
 
 #button {
     display: flex;    
     border: none;  
-    margin-top: 900px;
+    margin-top: 200px;
     margin-left:200px;
     flex-wrap: wrap;
     gap: 100px;
@@ -61,7 +71,6 @@ body {
 
 .N, .B, .C, .D {
     color: rgb(255, 255, 255);
-    border: solid 3px white;
     border-radius: 20px;
     font-size: 30px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
@@ -84,102 +93,75 @@ body {
     border-radius: 15px;
 }
 
-#bloco1 {
-    position: absolute;
-    background: #f0f0f0;
-    border: none;
+
+
+#container {
+    background-color: #ffffff; /* Fundo branco */
+    padding: 60px;
     border-radius: 10px;
-    margin-top: 400px;
+    margin-top: 300px; /* Ajuste o espaçamento superior para não sobrepor */
+    color: #333; /* Cor do texto */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 85%; /* Ajuste da largura para não distorcer */
+    height: 350px;
+    top: 20px;
     margin-left: 110px;
-    width: 400px;
-    height: 300px;
-    box-shadow: 5px 5px 10px  #00000010, -10px -10px 15px #00000010;
-
+    margin-right: auto; /* Centralizar o container */
+    gap: 10px;
 }
 
-
-.B1{
+#bloco1, #bloco2, #bloco3 {
+    background: #f0f0f0; /* Blocos com leve tom cinza para destaque */
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    margin-top: 70px;
     text-align: center;
-
-}
-
-
-.B2 {
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 40px;
-    text-align: center;
-
-    
-}
-
-
-
-#bloco2 {
-    position: absolute;
-    background: #f0f0f0;
     border: none;
     border-radius: 10px;
-    margin-top: 400px;
-    margin-left: 800px;
-    width: 400px;
-    height: 300px;
-    box-shadow: 5px 5px 10px  #00000010, -10px -10px 15px #00000010;
+    margin-top: 50px;
+    margin-left: auto;
+    width: 25%; /* Garantir que os blocos fiquem alinhados corretamente */
+    padding: 20px; /* Espaçamento interno */
 
 }
 
 
-
-.B3{
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 70px;
-    text-align: center;
-
-}
-
-
-.B4 {
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 40px;
-    text-align: center;
-
-    
-}
-
-
-#bloco3 {
+#caixas {
+    display: flex;
     position: absolute;
+    /* background: #e9eaeb; */
+    width: 80%;
+    height: 210vh;
+    border:  none;
+    border-radius: 20px;
+    top: 1700px;
+    padding: auto;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-items: auto;
+    flex-direction: column;
+}
+
+.caixa1, .caixa2, .caixa3, .caixa4 {
     background: #f0f0f0;
     border: none;
-    border-radius: 10px;
-    margin-top: 400px;
-    margin-left: 1500px;
+    border-radius: 20px;
     width: 400px;
-    height: 300px;
-    box-shadow: 5px 5px 10px  #00000010, -10px -10px 15px #00000010;
-
+    height: 300px;    
+    margin-left: 100px;
+    margin-top: 50px;
+    overflow: hidden;
 }
 
 
-.B5{
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 70px;
-    text-align: center;
 
-}
-
-
-.B6 {
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 40px;
-    text-align: center;
-
-    
+.caixa1 img, .caixa2 img, .caixa3 img, .caixa4 img {
+    /* opacity: 0.5; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
 }
